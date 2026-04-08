@@ -2,9 +2,9 @@ from fastapi import FastAPI, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from abacus_solver import solve_abacus
-from llm_service import get_llm_response
-from voice import speech_to_text
+from backend.abacus_solver import solve_abacus
+from backend.llm_service import get_llm_response
+from backend.voice import speech_to_text
 
 app = FastAPI()
 
